@@ -1,0 +1,71 @@
+.header-nav {
+    width: 100%;
+    margin-bottom: 1rem;
+    background: #212529;
+}
+
+
+.nav-section-top {
+    padding: 1rem;
+    text-align: center;
+}
+
+
+.nav-section-center ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.nav-section-center li {
+    padding: 1rem;
+    list-style: none;
+
+}
+
+.nav-section-center li .link {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+
+}
+
+.header-nav .nav-section-bottom .img-header {
+    background-image: url("https://www.freetogame.com/assets/images/paladins.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: auto;
+    overflow-wrap: break-word;
+}
+
+.container-description {
+    width: 80%;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    color: rgb(170, 170, 170);
+    margin: 0 auto;
+
+}
+
+.container-description div h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+
+}
+
+.container-description div p {
+    height: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+
+}
+
+span {
+    color: rgb(73, 172, 255);
+}

@@ -1,0 +1,37 @@
+service: aws-lambda
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  region: 'sa-east-1'
+  httpApi:
+    cors: true
+
+functions:
+  index:
+    handler: src/handler.index
+    events:
+      - httpApi:
+          path: /
+          method: get
+         
+    environment:
+      LOCALHOST : http://localhost:5173
+      XRAPIDAPIKEY : bd05e0d471msh7ec8334312fa389p1bf0f6jsn1be1d32fe181
+      XRAPIDAPIHOST : free-to-play-games-database.p.rapidapi.com
+      APIURL : https://free-to-play-games-database.p.rapidapi.com/api/games
+      
+  
+  getData:
+    handler: src/dbDinamo.getDataDb
+    events:
+      - httpApi:
+          path: /getData
+          method: get
+       
+  
+    
+    
+     
+          
